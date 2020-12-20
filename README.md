@@ -227,7 +227,7 @@ public static void main(String[] args) {
  
 ![image](https://user-images.githubusercontent.com/66653324/102713393-4bc78400-430b-11eb-9201-b1222b18d59f.png)
 
-**년도, 월, 요일 입력을 받는다 **
+**년도, 월, 요일 입력을 받는다**
 
 ![image](https://user-images.githubusercontent.com/66653324/102713420-6c8fd980-430b-11eb-83b5-f3fd3f3f01d3.png)
 
