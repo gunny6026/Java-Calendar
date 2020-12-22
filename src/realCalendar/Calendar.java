@@ -59,7 +59,7 @@ public class Calendar {
 		//기준 날짜의 요일을 계산한다.
 		//변수를 어떻게 설정 할까?
 		int syear = 1970;
-		int standardWeekday = 3; // 1970/Jan/1st = Thursday
+		int standardWeekday = 4; // 1970/Jan/1st = Thursday
 		
 		int count = 0;
 		
@@ -72,7 +72,7 @@ public class Calendar {
 			int delta = maxDaysofMonth(year, i);
 			count += delta;
 		}
-		count += day;
+		count += day -1;
 		
 		
 		int weekday = (count+standardWeekday) % 7;
