@@ -232,3 +232,45 @@ public static void main(String[] args) {
 ![image](https://user-images.githubusercontent.com/66653324/102713420-6c8fd980-430b-11eb-83b5-f3fd3f3f01d3.png)
 
 **출력 값**
+
+----------------------------------
+
+## 자동으로 달력 출력하기
+
+기준 날짜 설정 : 1970년 1월1일 목요일
+
+```
+private int getWeekDay(int year, int month, int day) {
+		//기준 날짜의 요일을 계산한다.
+		//변수를 어떻게 설정 할까?
+		int syear = 1970;
+		int standardWeekday = 4; // 1970/Jan/1st = Thursday
+		
+		int count = 0;
+		
+		for(int i = syear; i< year; i++) {
+			int delta = isLeapYear(i) ? 366 : 365;
+			count += delta;
+		}
+		
+		for(int i =1; i< month; i++) {
+			int delta = maxDaysofMonth(year, i);
+			count += delta;
+		}
+		count += day -1;
+		
+		
+		int weekday = (count+standardWeekday) % 7;
+		
+		return weekday;	
+	}
+
+```
+
+![image](https://user-images.githubusercontent.com/66653324/102863099-733a6000-4475-11eb-84dc-45f81f7aea63.png)
+
+----------
+
+![image](https://user-images.githubusercontent.com/66653324/102863133-7fbeb880-4475-11eb-99d3-d7ca0832b26d.png)
+
+
